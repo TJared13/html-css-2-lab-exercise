@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    height: 410vh;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+}
+
+h2 {
+    /* margin-top: 10px; */
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: ;
+    color: rgba(255, 255, 255, 0.801);
+    position: relative;
+}
+
+p {
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: ;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+
+.pageone-text {
+    width: 1000px;
+    height: 400px;
+    margin-left: 100px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 500px;
+    text-align: left;
+    z-index: 1;
+}
+
+.pagetwo-text {
+    width: 575px;
+    height: 400px;
+    margin-left: 100px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    position: absolute;
+    top: 350px;
+    text-align: left;
+    z-index: 1;
+}
+
+
+.text-box{
+    width: 175px;
+    height: 75px;
+    border: white 3px solid;
+    position: relative;
+    display: flex;
+    text-align: center;
+    top: 75px;
+}
+
+
+.box-text {
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: white;
+    z-index: 1;
+}
+
+.text-box:hover {
+    cursor: pointer;
+    background-color: rgba(158, 245, 252, 0.562);
+}
+
+
+
+.site-header {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(128, 151, 255, 0);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+        /* display: flex; */
+}
+
+.site-footer {
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    /* bottom: -10px; */
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+
+.footer-links{
+}
+
+.linkText {  
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+
+    margin: 0px 50px;
+    position: relative;
+    top: 10px;
+}
+
+.linkText:hover {
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: rgb(184, 255, 251);
+}
+
+.linkText.waterMark{
+    color: rgba(255, 255, 255, 0.411);
+}
+
+
+.nav {
+    margin-top: 2.5vh;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:baseline;
+}
+
+.spacex-logo {
+    width: 200px;
+    height: 30px;    
+}
+
+.item {
+    /* margin-left: 20px; */
+    margin-right: 20px;
+    justify-content: flex-start;
+    text-align: center;
+    /* justify-content: space-between; */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.item:hover {
+    cursor: pointer;
+    font-size: 13px;
+    color: rgb(185, 247, 255);
+    text-shadow: black 5px 5px 5px;
+}
+
+.item.r {
+    margin-right: 650px;
+}
+
+.bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    right: 2px;
+}
+
+.bars::before, .bars::after {
+    background: #999;
+    display: inline-block;
+    content: '';
+    height: 2px;
+    width: 18px;
+    position: absolute;
+    right: 0.5px;
+
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+.bars:hover {
+    cursor: pointer;
+    color: rgba(158, 245, 252, 0.562);
+    box-shadow: black 3px 3px 3px;
+}
+
+
+
+.background-one{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('images/rocket_bg.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-color: aqua; */
+}
+.background-two{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('images/Starshipascent_bg.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-color: aqua; */
+}
+.background-three {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('images/astronaut_bg.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-color: aqua; */
+}
+.background-four{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('images/iss_bg.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-color: aqua; */
+}
+
